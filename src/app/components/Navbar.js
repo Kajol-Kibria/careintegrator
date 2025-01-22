@@ -36,15 +36,15 @@ export default function Navbar() {
     <div >
         <div className='z-50 relative flex items-center justify-center  '>
 
-<div className=' bg-[#fffbfb] hidden sm:block fixed py-3 px-2 rounded-full shd top-5 '>
-  <div className='flex items-center gap-40'>
+<div className=' bg-[#f7f7f7] hidden sm:block fixed py-3 px-44 top-0 w-full'>
+  <div className='flex items-center justify-between'>
 
   <div className='ml-5'>
-    <Image src='/logocare1.png' alt='' width={110} height={110}/>
+    <Image src='/logocare1.png' alt='' width={130} height={130}/>
   </div>
   <div>
 
-  <div className='flex gap-10 '>
+  <div className='flex gap-6 font-semibold text-gray-800'>
     {navarray.map(({name, path})=>{return(
       <div key={name}>
         <Link href={path}>{name}</Link>
@@ -52,24 +52,25 @@ export default function Navbar() {
     )})}
     </div>
   </div>
-  <div >
-    <a href='./Manohar-Kamalapurkar-MBA.pdf' download className='hover:bg-black transition-all duration-300 text-white bg-[#023382] py-4 px-8 rounded-full' >Download CV</a>
-   
-  </div>
+  
   </div>
 </div>
 
-  <div className='sm:hidden block fixed   top-0  w-full'>
-    <div className=' py-5 bg-[#fffbfb] shd flex justify-between items-center'>
 
-    <Image className='ml-36' src='/logocare1.png' alt='' width={130} height={130}/>
+
+
+
+  <div className='sm:hidden block fixed top-0 right-0 left-0 '>
+    <div className=' py-5 bg-[#f6f6f6]  flex justify-between items-center'>
+
+    <Image className=' ml-6' src='/logocare1.png' alt='' width={130} height={130}/>
     <div  onClick={()=>{setMenu(!menu)}}>
       <HiMenuAlt4 className={`${menu?'hidden':'block'} mx-3`} size={35}/>
       <IoClose className={`${menu?'block':'hidden'} mx-3`} size={35}/>
       
     </div>
     </div>
-    <div className={`${menu?'-my-3':'-my-[550px]'} py-8 shadow-lg bg-[#fffbfb] transition-all duration-700`}>
+    <div onClick={()=>{setMenu(!menu)}} className={`${menu?'-my-3':'-my-[550px]'} py-8 shadow-lg bg-[#f6f6f6] font-bold text-gray-800 transition-all duration-700`}>
       <div className='grid gap-8 items-center justify-center text-center py-6'>
       {navarray.map(({name, path})=>{return(
       <div key={name}>
@@ -78,7 +79,7 @@ export default function Navbar() {
     )})}
       </div>
       <div className='flex items-center justify-center'>
-    <a className='hover:bg-black transition-all duration-300 text-white bg-[#023382] py-4 px-20 rounded-full' download href="./Manohar-Kamalapurkar-MBA.pdf">Download CV</a>
+    <a className=' hover:bg-black transition-all duration-300 text-white bg-[#023382] py-4 px-20 rounded-full' download href="./Manohar-Kamalapurkar-MBA.pdf">Download CV</a>
 
       </div>
     </div>
