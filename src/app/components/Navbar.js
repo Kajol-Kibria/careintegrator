@@ -36,7 +36,7 @@ export default function Navbar() {
     <div >
         <div className='z-50 relative flex items-center justify-center  '>
 
-<div className=' bg-[#f7f7f7] hidden sm:block fixed py-3 px-44 top-0 w-full'>
+<div className=' bg-gray-50/65 backdrop-blur-md hidden sm:block fixed py-3 px-44 top-0 w-full'>
   <div className='flex items-center justify-between'>
 
   <div className='ml-5'>
@@ -60,8 +60,8 @@ export default function Navbar() {
 
 
 
-  <div className='sm:hidden block fixed top-0 right-0 left-0 '>
-    <div className=' py-5 bg-[#f6f6f6]  flex justify-between items-center'>
+  <div className=' sm:hidden block fixed top-0 right-0 left-0 '>
+    <div className=' py-5 bg-gray-50/75 backdrop-blur-md  flex justify-between items-center'>
 
     <Image className=' ml-6' src='/logocare1.png' alt='' width={130} height={130}/>
     <div  onClick={()=>{setMenu(!menu)}}>
