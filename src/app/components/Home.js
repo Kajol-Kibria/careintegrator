@@ -22,12 +22,12 @@ export default function Home() {
     <div className=''>
 
        
-      <div id='hero' className='sm:px-0 px-4 pb-[800px] herobg pt-44 sm:flex items-center justify-around'>
+      <div id='hero' className='sm:px-0 px-4 sm:h-screen herobg pt-44 sm:flex items-center justify-around'>
       
       <Image className='sm:block hidden  absolute right-[700px] top-[290px] ' src='/arrow2.png' width={120} height={120} alt='image'/>
-      <Image className='sm:block hidden  absolute left-16 top-[730px] ' src='/arrow.png' width={120} height={120} alt='image'/>
+      <Image className='sm:block hidden  absolute left-16 top-[690px] ' src='/arrow.png' width={120} height={120} alt='image'/>
       <Image className='sm:block hidden  absolute left-36 top-16 rotate-180' src='/image-removebg-preview.png' width={250} height={250} alt='image'/>
-      <Image className='sm:block hidden  absolute right-[850px] top-36' src='/Screenshot_3-removebg-preview.png' width={150} height={150} alt='image'/>
+      <Image className='sm:block hidden  absolute right-[850px] top-28 ' src='/Screenshot_3-removebg-preview.png' width={150} height={150} alt='image'/>
       <Image className='sm:block hidden opacity-10 absolute right-40 bottom-10' src='/PngItem_85242.png' width={150} height={150} alt='image'/>
       <Image className='sm:hidden block w-full mx-auto -mt-16 mb-6' src={'/pic4.jpeg'} width={350} height={350} alt='image'/>
         <div className='sm:w-1/3 sm:pl-48'>
@@ -81,9 +81,28 @@ export default function Home() {
 
 
 
-      <div id='about' className=' h-screen py-28'>
+      <div id='about' className='relative sm:h-screen sm:py-28 py-16 sm:px-40'>
+        <Image className='absolute right-[670px] top-[300px]' src='/glow.png' alt='' width={200} height={200}/>
+        <Image className='sm:block hidden  absolute left-0 top-16 ' src='/image-removebg-preview (2).png' width={180} height={180} alt='image'/>
+        <Image className='sm:block hidden  absolute -bottom-10  right-[500px]' src='/smile.png' width={160} height={160} alt='image'/>
+      
         <p  className='text-center font-bold text-3xl '>About Me</p>
         
+        <div className='sm:my-20 my-5 px-5 sm:flex items-center justify-around'>
+          <div className='flex-col flex items-center'>
+            <p className='my-5 text-center sm:text-3xl text-2xl bold  sm:w-2/3'>Imagine a world where health insurance is not frustrating</p>
+            <Image className=' rounded-3xl' src='/healthcare.avif' alt='' width={800} height={800} />
+          </div>
+          <div className='sm:w-2/5 '>
+          <div >
+
+            <p className='my-4 uppercase text-[#FF5F49] font-bold'>Read about me</p>
+            <p className='sm:text-5xl text-3xl bold  mb-5'>Healthcare professional and entrepreneur </p>
+            <p>with over 14 years of experience in large-scale enterprise business analysis, strategic leadership, and product management.  I excel in driving growth and innovation in Healthcare products with a proven track record of collaborating with product, sales, and go-to-market teams to achieve organizational goals.</p>
+            <button className='my-4 text-sm px-6 py-4 bold border-2 border-[#FF5F49] text-[#FF5F49]'>Book Appointments</button>
+          </div>
+          </div>
+        </div>
         
       </div>
 

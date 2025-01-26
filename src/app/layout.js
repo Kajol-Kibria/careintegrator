@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className=" scroll-smooth">
       <body
-        className={`bg-[#f6f6f6] regular text-[#0D2159] antialiased`}
+        className={` regular text-[#0D2159] antialiased`}
       >
         <Navbar/>
         {children}
