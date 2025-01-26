@@ -111,8 +111,8 @@ export default function Home() {
 
 
 
-      <div id='portfolio' className='h-screen py-28'>
-      <p  className='text-center font-bold text-3xl '>My Portfolio</p>
+      <div id='experience' className='h-screen py-28'>
+      <p  className='text-center font-bold text-3xl '>My Experience</p>
       </div>
       <div id='contact' className='h-screen py-28'>
       <p  className='text-center font-bold text-3xl '>Contact Me</p>
