@@ -91,14 +91,14 @@ export default function Home() {
         <div className='sm:my-20 my-5 px-5 sm:flex items-center justify-around'>
           <div className='flex-col flex items-center'>
             <p className='my-5 text-center sm:text-3xl text-2xl bold  sm:w-2/3'>Imagine a world where health insurance is not frustrating</p>
-            <Image className=' rounded-3xl' src='/healthcare.avif' alt='' width={800} height={800} />
+            <Image className=' rounded-3xl' src='/pic1.jpeg' alt='' width={500} height={500} />
           </div>
           <div className='sm:w-2/5 '>
           <div >
 
             <p className='my-4 uppercase text-[#FF5F49] font-bold'>Read about me</p>
             <p className='sm:text-5xl text-3xl bold  mb-5'>Healthcare professional and entrepreneur </p>
-            <p>with over 14 years of experience in large-scale enterprise business analysis, strategic leadership, and product management.  I excel in driving growth and innovation in Healthcare products with a proven track record of collaborating with product, sales, and go-to-market teams to achieve organizational goals.</p>
+            <h1>with over <span className='font-bold'>14 years</span> of experience in large-scale enterprise business analysis, strategic leadership, and product management.  I excel in driving growth and innovation in Healthcare products with a proven track record of collaborating with product, sales, and go-to-market teams to achieve organizational goals.</h1>
             <button className='my-4 text-sm px-6 py-4 bold border-2 border-[#FF5F49] text-[#FF5F49]'>Book Appointments</button>
           </div>
           </div>
